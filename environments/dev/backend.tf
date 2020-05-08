@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "gc4iaac"
+    bucket = "gcs4iaac"
     prefix = "env/dev"
   }
 }
