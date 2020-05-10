@@ -25,6 +25,11 @@ module "vpc" {
   source  = "../../modules/vpc"
   project = "${var.project}"
   env     = "${local.env}"
+  sub_name = "${var.sub_name}"
+  sub_ip = "${var.sub_ip}"
+  net_name = "${var.net_name}"
+  reg = "${var.reg}"
+  
 }
 
 module "http_server" {
