@@ -15,3 +15,4 @@
 
 variable "project" {}
 variable "subnet" {}
+variable "net_name" {}

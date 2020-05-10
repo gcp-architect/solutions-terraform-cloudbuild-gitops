@@ -36,10 +36,12 @@ module "http_server" {
   source  = "../../modules/http_server"
   project = "${var.project}"
   subnet  = "${module.vpc.subnet}"
+  pri_server = "${var.pri_server}"
 }
 
 module "firewall" {
   source  = "../../modules/firewall"
   project = "${var.project}"
   subnet  = "${module.vpc.subnet}"
+  net_name = "${var.net_name}"
 }

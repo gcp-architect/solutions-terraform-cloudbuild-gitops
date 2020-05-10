@@ -13,13 +13,9 @@
 # limitations under the License.
 
 
-locals {
-  network = "${element(split("-", var.subnet), 0)}"
-}
-
 resource "google_compute_firewall" "allow-http" {
-  name    = "${local.network}-allow-http"
-  network = "${local.network}"
+  name    = "fw-allow-http"
+  network = "${var.net_name}"
   project = "${var.project}"
 
   allow {

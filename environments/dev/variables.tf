@@ -18,3 +18,4 @@ variable "reg" {}
 variable "sub_name" {}
 variable "sub_ip" {}
 variable "net_name" {}
+variable "pri_server" {}
