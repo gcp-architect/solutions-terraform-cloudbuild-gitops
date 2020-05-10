@@ -15,3 +15,7 @@
 
 variable "project" {}
 variable "env" {}
+variable "net_name" {}
+variable "sub_name" {}
+variable "sub_ip" {}
+variable "reg" {}
