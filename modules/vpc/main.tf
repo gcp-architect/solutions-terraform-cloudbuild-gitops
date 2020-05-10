@@ -28,5 +28,7 @@ module "vpc" {
     }
   ]
 
+secondary_ranges = {
+    "${var.sub_name}" = []
 
 }
